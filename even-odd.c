@@ -1,7 +1,6 @@
 #include <stdio.h>
 int main(){
-    int n12
-    1;
+    int n12 1;
     printf("enter the number to check\n");
     scanf("%d",&n);
         if(n%2==0){
