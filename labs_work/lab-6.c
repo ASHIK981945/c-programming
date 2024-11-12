@@ -7,60 +7,75 @@ To understand function programming, its types and function-call
 
 // #include <stdio.h>
 
+// // Function to add two integers
 // int add(int a, int b) {
 //     return a + b;
 // }
+
+// // Function to subtract two integers
 // int subtract(int a, int b) {
 //     return a - b;
 // }
 
+// // Function to multiply two integers
 // int multiply(int a, int b) {
 //     return a * b;
 // }
 
+// // Function to divide two integers (checks for division by zero)
 // float divide(int a, int b) {
 //     if (b != 0) {
 //         return (float)a / b;
 //     } else {
-//         printf("Division by zero error!\n");
+//         printf("Error: Division by zero is not allowed.\n");
 //         return 0;
 //     }
 // }
 
 // int main() {
 //     int num1, num2;
-
 //     printf("Enter two integers: ");
 //     scanf("%d %d", &num1, &num2);
 
+//     // Perform and display each operation
 //     printf("Addition: %d\n", add(num1, num2));
 //     printf("Subtraction: %d\n", subtract(num1, num2));
 //     printf("Multiplication: %d\n", multiply(num1, num2));
-//     printf("Division: %.2f\n", divide(num1, num2));
+//     if (num2 != 0) {
+//         printf("Division: %.2f\n", divide(num1, num2));
+//     } else {
+//         printf("Cannot perform division by zero.\n");
+//     }
+// } 
 
-//     return 0;
-// }
 
 // Write a program to calculate sum of first 50 natural numbers using recursive function.
 
-
 // #include <stdio.h>
 
-// int sum_of_natural_numbers(int n) {
-//     if (n == 0) {
-//         return 0;
+// // Function to calculate sum using recursion
+// int sum(int n) {
+//     if (n == 1) {
+//         return 1;  // Base case
+//     } else {
+//         return n + sum(n - 1);  // Recursive case
 //     }
-//     return n + sum_of_natural_numbers(n - 1);
 // }
 
 // int main() {
-//     int sum = sum_of_natural_numbers(50);
-//     printf("Sum of first 50 natural numbers: %d\n", sum);
+//     int result;
+
+//     // Calculate sum of first 50 natural numbers
+//     result = sum(50);
+
+//     // Display the result
+//     printf("The sum of the first 50 natural numbers is: %d\n", result);
+
 //     return 0;
 // }
 
 
-// Define a function named fact() to calculate factorial of a number n and then write a program that uses this function fact() to calculate combination and permutation.
+// // Define a function named fact() to calculate factorial of a number n and then write a program that uses this function fact() to calculate combination and permutation.
 
 
 // #include <stdio.h>
@@ -91,25 +106,30 @@ To understand function programming, its types and function-call
 //     return 0;
 // }
 
-// Write a recursive function to generate Fibonacci series.
-
+// // Write a recursive function to generate Fibonacci series.
 // #include <stdio.h>
 
-// void fibonacci(int n, int a, int b) {
-//     if (n > 0) {
-//         printf("%d ", a);
-//         fibonacci(n - 1, b, a + b);
-//     }
+// // Recursive function to return the Fibonacci number at position n
+// int fibonacci(int n) {
+//     if (n == 0) return 0;         // Base case 1
+//     if (n == 1) return 1;         // Base case 2
+//     return fibonacci(n - 1) + fibonacci(n - 2);  // Recursive call
 // }
 
 // int main() {
-//     int n;
-//     printf("Enter number of terms: ");
+//     int n, i;
+
+//     // Input the number of terms
+//     printf("Enter the number of terms in the Fibonacci series: ");
 //     scanf("%d", &n);
-    
-//     printf("Fibonacci series: ");
-//     fibonacci(n, 0, 1);
+
+//     // Print Fibonacci series
+//     printf("Fibonacci Series: ");
+//     for (i = 0; i < n; i++) {
+//         printf("%d ", fibonacci(i));
+//     }
 //     printf("\n");
+
 //     return 0;
 // }
 

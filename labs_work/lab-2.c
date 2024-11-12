@@ -66,23 +66,23 @@
 
 // Write a program to swap two variables values with and without using third variables
 
-// #include<stdio.h>
-// int main() {
-//   float first, second, temp;
+#include<stdio.h>
+int main() {
+  float first, second, temp;
 
-//   printf("Enter first number: ");
-//   scanf("%f", &first);
-//   printf("Enter second number: ");
-//   scanf("%f", &second);
+  printf("Enter first number: ");
+  scanf("%f", &first);
+  printf("Enter second number: ");
+  scanf("%f", &second);
 
-//   temp = first;
-//   first = second
-//   second = temp;
+  temp = first;
+  first = second
+  second = temp;
 
-//   printf("\nAfter swapping, first number = %.2f\n", first);
-//   printf("After swapping, second number = %.2f", second);
-//   return 0;
-// }
+  printf("\nAfter swapping, first number = %.2f\n", first);
+  printf("After swapping, second number = %.2f", second);
+  return 0;
+}
 
 
 // Write a program to check odd oreven number 
