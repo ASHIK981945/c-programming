@@ -74,14 +74,14 @@
 
 // Write a program to calculate area of an ellipse having its axes (minor=4cm, major=6cm).
 
-#include<stdio.h>
-# define pi 3.1416
+// #include<stdio.h>
+// # define pi 3.1416
 
-int main(){
-    float major,minor,area;
-    printf("Enter the minor and major axis of ellipse:\n");// input=(minor=4cm, major=6cm). 
-    scanf("%f%f",&major,&minor);
-    area = pi * minor * major ;
-    printf("Area of ellipse = %f",area);// output=75.398399
-    return 0; 
+// int main(){
+//     float major,minor,area;
+//     printf("Enter the minor and major axis of ellipse:\n");// input=(minor=4cm, major=6cm). 
+//     scanf("%f%f",&major,&minor);
+//     area = pi * minor * major ;
+//     printf("Area of ellipse = %f",area);// output=75.398399
+//     return 0; 
 }

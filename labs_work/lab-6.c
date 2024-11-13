@@ -198,27 +198,27 @@ To understand function programming, its types and function-call
 // Write a program to find smallest number from the array using function.
 
 
-// #include <stdio.h>
+#include <stdio.h>
 
-// int find_smallest(int arr[], int n) {
-//     int smallest = arr[0];
-//     for (int i = 1; i < n; i++) {
-//         if (arr[i] < smallest) {
-//             smallest = arr[i];
-//         }
-//     }
-//     return smallest;
-// }
+int find_smallest(int arr[], int n) {
+    int smallest = arr[0];
+    for (int i = 1; i < n; i++) {
+        if (arr[i] < smallest) {
+            smallest = arr[i];
+        }
+    }
+    return smallest;
+}
 
-// int main() {
-//     int arr[5], smallest;
+int main() {
+    int arr[5], smallest;
 
-//     printf("Enter 5 numbers: ");
-//     for (int i = 0; i < 5; i++) {
-//         scanf("%d", &arr[i]);
-//     }
+    printf("Enter 5 numbers: ");
+    for (int i = 0; i < 5; i++) {
+        scanf("%d", &arr[i]);
+    }
 
-//     smallest = find_smallest(arr, 5);
-//     printf("Smallest number is: %d\n", smallest);
-//     return 0;
-// }
+    smallest = find_smallest(arr, 5);
+    printf("Smallest number is: %d\n", smallest);
+    return 0;
+}
